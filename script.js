@@ -59,7 +59,7 @@ function playMidnightChime() {}
 })();
 
 /* ─── SHINCHAN PASSCODE VERIFICATION (4 DIGITS) ─── */
-const TARGET_PASSCODE = "2005"; // 4-digit passcode
+const TARGET_PASSCODE = "0411"; // 4-digit passcode
 
 const SHINCHAN_GIFS = {
   ask: "assets/shinchan-birthday.png",
@@ -115,7 +115,7 @@ function submitBirthdayDate() {
   }
 
   if (enteredDigits === TARGET_PASSCODE) {
-    // Correct Passcode (2005) - Directly transition to the Surprise Question Screen
+    // Correct Passcode (0411) - Directly transition to the Surprise Question Screen
     const danceGif = document.getElementById('dance-gif');
     if (danceGif) {
       danceGif.src = DANCE_GIF_URL;
@@ -168,7 +168,7 @@ function submitBirthdayDate() {
   } else {
     // Wrong Passcode
     img.src = SHINCHAN_GIFS.wrong;
-    txt.textContent = "Oops! Wrong Passcode! Try again, cutie! 🥺";
+    txt.textContent = "Oops! Wrong Passcode! Try again, NIGGA! 🥺";
     card.classList.remove('shake');
     void card.offsetWidth;
     card.classList.add('shake');
@@ -224,7 +224,7 @@ function handleChoice(choice) {
     }
     const promptEl = document.getElementById('surprise-prompt');
     if (promptEl) {
-      promptEl.innerHTML = "Are you sure? 🥺 Please say YES! 💖";
+      promptEl.innerHTML = "Are you sure RDS? 🥺 Please say YES! 💖";
       triggerElementAnim(promptEl, 'prompt-entrance-pop');
     }
     const noBtn = document.getElementById('btn-no');
@@ -236,7 +236,7 @@ function handleChoice(choice) {
     return;
   }
 
-  // When choice === 'yes' -> Show "Are you really excited?" screen with distinct animation
+  // When choice === 'yes' -> Show "Are you really excited NBK?" screen with distinct animation
   const archText = document.getElementById('arch-text-path');
   if (archText) {
     archText.textContent = "Are you really excited?";
@@ -340,7 +340,7 @@ function focusHangingPhoto(el) {
 
 /* ─── MAKE A WISH: BIRTHDAY CAKE (BOX 2) ─── */
 let isWishMade = false;
-let blownCandlesCount = 0;
+let blownCandlesCount = 18;
 
 function openCakeModal() {
   launchConfetti();
@@ -368,8 +368,8 @@ function makeCakeWish(e) {
   if (isWishMade) return;
   isWishMade = true;
 
-  // Extinguish all 7 candles
-  for (let i = 1; i <= 7; i++) {
+  // Extinguish all 18 candles
+  for (let i = 1; i <= 18; i++) {
     const flame = document.getElementById(`flame-${i}`);
     if (flame) flame.classList.add('extinguished');
   }
@@ -380,7 +380,7 @@ function makeCakeWish(e) {
 
   // Update top arched text to celebration
   const archText = document.getElementById('cake-arch-text');
-  if (archText) archText.textContent = "HAPPY BIRTHDAY ! 🎉";
+  if (archText) archText.textContent = "HAPPY BIRTHDAY BHARATH KARTHICK N ! 🎉";
 
   // Hide hint and show celebration ribbon
   const hint = document.getElementById('cake-footer-hint');
@@ -396,13 +396,13 @@ function resetCake() {
   isWishMade = false;
   blownCandlesCount = 0;
 
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= 18; i++) {
     const flame = document.getElementById(`flame-${i}`);
     if (flame) flame.classList.remove('extinguished');
   }
 
   const archText = document.getElementById('cake-arch-text');
-  if (archText) archText.textContent = "MAKE A WISH";
+  if (archText) archText.textContent = "MAKE A WISH MY BOI";
 
   const hint = document.getElementById('cake-footer-hint');
   if (hint) hint.style.display = 'block';
@@ -421,7 +421,7 @@ const MYSTERY_GIFTS = {
   3: {
     icon: "👑",
     title: "Gift #3: Lifetime Happiness Pass",
-    desc: "Unlimited hugs, endless laughter, and all your deepest birthday wishes coming true! 🎁💫💖"
+    desc: "Unlimited hugs, endless laughter, and all your deepest birthday wishes coming true!TATAKAI! 🎁💫💖"
   }
 };
 
@@ -467,7 +467,7 @@ function closeGiftModal() {
 const LETTER_SECTIONS = [
   {
     id: 'letter-headline-el',
-    text: "Happy birthday to my favourite\nperson! ❤️"
+    text: "Happy birthday to my Best Friend Forever! ❤️"
   },
   {
     id: 'letter-p1-el',
@@ -475,11 +475,11 @@ const LETTER_SECTIONS = [
   },
   {
     id: 'letter-p2-el',
-    text: "I'm so lucky to have you, and I can't wait to make a million more memories with you. Here's to you, your dreams, and all the happiness you deserve."
+    text: "I'm so lucky to have you love u macha, and I can't wait to make a million more memories with you. Here's to you, your dreams, and all the happiness you deserve."
   },
   {
     id: 'letter-closing-el',
-    text: "Happy birthday, my love. I love you more than you know. 🫶🏻🎂❤️"
+    text: "Happy birthday, my love. I love you more than you know (FACTS). 🫶🏻🎂❤️"
   }
 ];
 
