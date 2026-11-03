@@ -62,8 +62,8 @@ function playMidnightChime() {}
 const TARGET_PASSCODE = "0411"; // 4-digit passcode
 
 const SHINCHAN_GIFS = {
-  ask: "https://photos.app.goo.gl/P3Nyr8MARLxuGBib7",
-  wrong: "https://photos.app.goo.gl/HY629DxBpsY7Wp3d8"
+  ask: "GIF_20261103_182835_469.gif",
+  wrong: "GIF_20261103_183750_901.gif"
 };
 
 let enteredDigits = "";
