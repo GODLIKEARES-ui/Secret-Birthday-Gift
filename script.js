@@ -211,9 +211,9 @@ function triggerElementAnim(el, animClass) {
 }
 
 /* ─── SURPRISE CHOICE INTERACTION (YES / NO) ─── */
-const DANCE_GIF_URL = "https://photos.app.goo.gl/wVtpBa4JT4XXkbib6";
-const PLEADING_GIF_URL = "https://photos.app.goo.gl/kiroYXGFaK3Bxfsu5";
-const EXCITED_GIF_URL = "https://photos.app.goo.gl/ZLSnVKYWVWVVSz6v7";
+const DANCE_GIF_URL = "assets/shinchan-dance.gif";
+const PLEADING_GIF_URL = "GIF_20261103_183958_497.gif";
+const EXCITED_GIF_URL = "GIF_20261103_184332_557.gif";
 
 function handleChoice(choice) {
   const danceGif = document.getElementById('dance-gif');
