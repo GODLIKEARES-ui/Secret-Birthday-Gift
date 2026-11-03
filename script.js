@@ -62,8 +62,8 @@ function playMidnightChime() {}
 const TARGET_PASSCODE = "0411"; // 4-digit passcode
 
 const SHINCHAN_GIFS = {
-  ask: "assets/shinchan-birthday.png",
-  wrong: "assets/shinchan-wrong.png"
+  ask: "https://photos.app.goo.gl/P3Nyr8MARLxuGBib7",
+  wrong: "https://photos.app.goo.gl/HY629DxBpsY7Wp3d8"
 };
 
 let enteredDigits = "";
@@ -168,7 +168,7 @@ function submitBirthdayDate() {
   } else {
     // Wrong Passcode
     img.src = SHINCHAN_GIFS.wrong;
-    txt.textContent = "Oops! Wrong Passcode! Try again, NIGGA! 🥺";
+    txt.textContent = "WOMP WOMP! Wrong Passcode! Try again, NIGGA! 🥺";
     card.classList.remove('shake');
     void card.offsetWidth;
     card.classList.add('shake');
@@ -211,9 +211,9 @@ function triggerElementAnim(el, animClass) {
 }
 
 /* ─── SURPRISE CHOICE INTERACTION (YES / NO) ─── */
-const DANCE_GIF_URL = "assets/shinchan-dance.gif";
-const PLEADING_GIF_URL = "assets/shinchan-pleading.gif";
-const EXCITED_GIF_URL = "assets/shinchan-excited.gif";
+const DANCE_GIF_URL = "https://photos.app.goo.gl/wVtpBa4JT4XXkbib6";
+const PLEADING_GIF_URL = "https://photos.app.goo.gl/kiroYXGFaK3Bxfsu5";
+const EXCITED_GIF_URL = "https://photos.app.goo.gl/ZLSnVKYWVWVVSz6v7";
 
 function handleChoice(choice) {
   const danceGif = document.getElementById('dance-gif');
@@ -380,7 +380,7 @@ function makeCakeWish(e) {
 
   // Update top arched text to celebration
   const archText = document.getElementById('cake-arch-text');
-  if (archText) archText.textContent = "HAPPY BIRTHDAY BHARATH KARTHICK N ! 🎉";
+  if (archText) archText.textContent = "BDAY NBK! 🎉";
 
   // Hide hint and show celebration ribbon
   const hint = document.getElementById('cake-footer-hint');
@@ -471,15 +471,15 @@ const LETTER_SECTIONS = [
   },
   {
     id: 'letter-p1-el',
-    text: "I hope this year brings you everything you've been wishing for and so much more. Thank you for making my days happier, my bad days easier, and my life a little more beautiful just by being in it. 🥺💖"
+    text: "I hope this year brings you everything you've been wishing for and so much more. Thank you for making my days happier, my bad days easier,Grateful to u even if i dont know your secrets. 🥺💖"
   },
   {
     id: 'letter-p2-el',
-    text: "I'm so lucky to have you love u macha, and I can't wait to make a million more memories with you. Here's to you, your dreams, and all the happiness you deserve."
+    text: "I'm so lucky to have  u macha, and I can't wait to make a million more memories with you. Here's to you, your dreams, and all the happiness you deserve."
   },
   {
     id: 'letter-closing-el',
-    text: "Happy birthday, my love. I love you more than you know (FACTS). 🫶🏻🎂❤️"
+    text: "Happy birthday, BK BOI. I love you more than you know (FACTS). 🫶🏻🎂❤️"
   }
 ];
 
